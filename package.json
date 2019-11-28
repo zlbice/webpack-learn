@@ -1,14 +1,13 @@
 {
   "name": "cruise",
-  //tree-shaking
   "sideEffects": ["@babel/polly-fill","*.css","*.styl"],
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "mocha --require @babel/register src/js/*.spec.js",
     "start": "webpack-dev-server --config ./build/webpack.dev.js",
-    "build": "webpack --config ./buildwebpack.prod.js"
+    "build": "webpack --config ./build/webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
